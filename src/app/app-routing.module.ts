@@ -14,11 +14,9 @@ const routes: Routes = [{
     { path: '', component: HomeComponent, pathMatch: 'full' },
     { path: 'products', component: ProductsComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent }
+    { path: 'register', component: RegisterComponent },
+    { path: 'faq', component: FaqComponent },
   ]
-},
-{
-  path: 'faq', component: FaqComponent
 },
 {
   path: 'admin', component: AdminDashboardComponent
