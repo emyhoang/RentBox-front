@@ -1,0 +1,152 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+  
+.ml-1{
+  margin-left : 1px;
+}
+
+.ml-2{
+  margin-left : 2px;
+}
+
+.ml-3{
+  margin-left : 3px;
+}
+
+.ml-4{
+  margin-left : 4px;
+}
+
+.ml-5{
+  margin-left : 5px;
+}
+
+.ml-50{
+  margin-left : 50px;
+}
+.ml-80{
+  margin-left : 80px;
+}
+
+.ml-100{
+  margin-left : 100px;
+}
+
+.ml-120{
+  margin-left : 120px;
+}
+
+.ml-150{
+  margin-left : 150px;
+}
+
+.ml-220{
+  margin-left : 220px;
+}
+.mt-1{
+  margin-top: 1px;
+}
+
+.mt-2{
+  margin-top: 2px;
+}
+
+.mt-5{
+  margin-top: 5px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.m-r-10 {margin-right: 10px;}
+
+.mb-50{
+  margin-bottom: 50px;
+}
+
+
+.text-Roboto{
+  font-family: "Roboto";
+  font-weight: lighter;
+}
+
+.text-Serif{
+  font-family: "Serif";
+  font-size: 30.5px;
+  font-weight:bold;
+}
+
+.text-Serif-Reg{
+  font-family: "Serif";
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.width-80{
+  width: 80%;
+}
+
+.card-width{
+  width: 400px;
+}
+
+.login-card{
+  width: 400px;
+  min-height: 400px;
+  background-color: pink;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
+.of-hidden {
+  overflow: hidden;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.wrap-pic-w .single-p-img {
+  width: 100%;
+}
+
+.single-p-img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+
+.danger{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}

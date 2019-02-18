@@ -1,0 +1,28 @@
+<div *ngIf='loginErrorMessage' class='alert danger'>
+  <p>{{ loginErrorMessage }}</p>
+</div>
+
+<div class="row mt-20">
+  <div class='col s4'></div>
+  <form (submit)="login()" class="col s4 card darken-1">
+    <h4 class='center mt-50'>Login</h4>
+    <div class="row">
+      <div class="input-field col s12">
+        <input name="newLogin.email" [(ngModel)]="newLogin.email" id="loginEmail" type="email" class="validate">
+        <label for="loginEmail">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input name="newLogin.password" [(ngModel)]="newLogin.password" id="loginPassword" type="password"
+          class="validate">
+        <label for="loginPassword">Password</label>
+      </div>
+    </div>
+    <button class='btn waves-effect waves-light blue right'>Login</button>
+    <br /><br />
+    <a routerLink="/register" class='right mb-50'>Don't have an account? </a>
+  </form>
+  <div class='col s4'></div>
+
+</div>

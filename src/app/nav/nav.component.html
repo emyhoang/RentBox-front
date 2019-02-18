@@ -1,0 +1,26 @@
+<div class="nav-wrapper white">
+  <div class='row'>
+    <div class="col s2">
+      <a href='/' class="brand-logo black-text ml-50 text-Roboto">RENTBOX</a>
+    </div>
+    <div class="col s7">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a class='black-text text-Roboto' routerLink="/products">Window Shop</a></li>
+        <li><a class='black-text text-Roboto' href="#how-it-works">How It Works</a></li>
+        <li><a class='black-text text-Roboto' href="collapsible.html" routerLink="/faq">F.a.q</a></li>
+      </ul>
+    </div>
+    <div class="col s3">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <!-- <li><a class='black-text text-Roboto' href="collapsible.html"><i class="material-icons large">favorite_border</i></a></li> -->
+        <li><a class='black-text' href="badges.html"><i class="material-icons large">add_shopping_cart</i></a></li>
+        <li *ngIf='!isLoggedIn()'>
+          <a class='black-text text-Roboto btn-small blue darken-4 white-text' routerLink="/login">Login</a>
+        </li>
+        <li *ngIf='isLoggedIn()'>
+          <a class='black-text text-Roboto btn-small blue darken-4 white-text' (click)="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

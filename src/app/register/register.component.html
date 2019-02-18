@@ -1,0 +1,43 @@
+<div class="row ml-50 mt-50">
+  <div class='col s4'></div>
+  <form (submit)="createUser()" [formGroup]="form" class="col s4 card darken-1">
+    <h4 class='center mt-20'>Register</h4>
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="First Name" [ngClass]="{'error': isValid('first_name')}" formControlName="first_name" id="first_name"
+          type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input [ngClass]="{'error': isValid('last_name')}" formControlName="last_name" id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input [ngClass]="{'error': isValid('email')}" formControlName="email" id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input [ngClass]="{'error': isValid('password')}" formControlName="password" id="password" type="password"
+          class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input [ngClass]="{'error': isValid('confirm_password')}" formControlName="confirm_password" id="confirmPassword"
+          type="password" class="validate">
+        <label for="password"> Confirm Password</label>
+      </div>
+    </div>
+    <span *ngIf="form.errors?.mismatchedFields">Passwords do not match</span>
+    <button class='btn waves-effect waves-light green right'> Register </button>
+    <br /><br />
+    <a routerLink="/login" class='right mb-50'>Already have an account?</a>
+  </form>
+
+  <div class='col s4'></div>
+</div>
