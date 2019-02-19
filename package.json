@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port $PORT --host 0.0.0.0 --disable-host-check",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --env=prod && mv dist/* .",
+    "postinstall": "ng build --configuration=production",
     "deploy": "git push origin master && git push heroku master"
   },
   "private": true,
