@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  BASE_URL: 'https://intense-dawn-91436.herokuapp.com'
+  baseUrl: 'https://intense-dawn-91436.herokuapp.com'
 };

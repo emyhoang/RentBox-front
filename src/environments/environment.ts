@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_URL: 'http://localhost:63145/auth'
+  baseUrl: 'http://localhost:63145/auth'
 };
 
 /*

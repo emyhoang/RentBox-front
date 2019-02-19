@@ -10,7 +10,7 @@ import { environment } from '../environments/environment'
   providedIn: 'root'
 })
 export class AuthService {
-  private BASE_URL = environment.BASE_URL
+  private BASE_URL = environment.baseUrl
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 
