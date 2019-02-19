@@ -4,12 +4,13 @@ import { Router } from '@angular/router';
 import { catchError, map } from 'rxjs/operators';
 import { Observable, of, BehaviorSubject } from 'rxjs';
 import { User } from '../app/_models/user';
+import { environment } from '../environments/environment'
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  BASE_URL = 'http://localhost:63145/auth';
+  private BASE_URL = environment.BASE_URL
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 
