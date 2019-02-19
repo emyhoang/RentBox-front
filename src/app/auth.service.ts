@@ -10,7 +10,7 @@ import { environment } from '../environments/environment'
   providedIn: 'root'
 })
 export class AuthService {
-  private BASE_URL = process.env.BASE_URL || environment.baseUrl
+  private BASE_URL = 'https://intense-dawn-91436.herokuapp.com'
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 
