@@ -35,6 +35,8 @@ export class LoginComponent implements OnInit {
     }, (err) => {
       if (err.status === 401) {
         this.loginErrorMessage = 'Invalid Credentials';
+      } else {
+        this.loginErrorMessage = JSON.stringify(err)
       }
     })
   }
